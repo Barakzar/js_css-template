@@ -3,6 +3,7 @@ let month = 8;
 function getLastDayOfMonth(year, month) {
     return new Date(year, month, 0).getDate()
 }
+
 //דוגמא לpromise
 function sleep(amount) {
     return new Promise((resolve, reject) => {
@@ -12,21 +13,21 @@ function sleep(amount) {
         setTimeout(() => resolve(`Slept for ${amount}`), amount)
     });
 }
-sleep(500)
-    .then((result) => {
-        console.log(result);
-        return sleep(1000);
-    })
-    .then((result) => {
-        console.log(result);
-        return sleep(750);
-    })
-    .then((result) => {
-        console.log(result);
-        console.log('Done!');
-        return sleep(500);
-    })
-    .catch((reject) => {
-        console.log(reject);
+// sleep(500)
+//     .then((result) => {
+//         console.log(result);
+//         return sleep(1000);
+//     })
+//     .then((result) => {
+//         console.log(result);
+//         return sleep(750);
+//     })
+//     .then((result) => {
+//         console.log(result);
+//         console.log('Done!');
+//         return sleep(500);
+//     })
+//     .catch((reject) => {
+//         console.log(reject);
         
-    })
+//     })
