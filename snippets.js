@@ -3,6 +3,11 @@ let month = 8;
 function getLastDayOfMonth(year, month) {
     return new Date(year, month, 0).getDate()
 }
+// פונקצית assert
+const assert = function(condition, message) {
+    if (!condition)
+        throw Error('Assert failed: ' + (message || ''));
+};
 
 //דוגמא לpromise
 function sleep(amount) {
